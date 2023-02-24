@@ -94,8 +94,6 @@ function send() {
     } else {
         document.getElementById("send").style.cssText = "display:block; background-color: red;"
         document.getElementById("send").innerHTML = "Please fill all fields";
-         setTimeout(function(){
-                        window.location.reload()   
-                     } ,3000)
+         
     }
 }
