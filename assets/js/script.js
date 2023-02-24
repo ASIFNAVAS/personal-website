@@ -85,14 +85,17 @@ function send() {
                     document.getElementById("load").style.display = "none";
                     document.getElementById("error").style.display = "block";
                     document.getElementById("error").innerHTML = "Something went wrong, Try again";
-                    // setTimeout(function(){
-                    //     window.location.reload()   
-                    //  } ,3000)
+                     setTimeout(function(){
+                        window.location.reload()   
+                     } ,3000)
                 }
             })
         })
     } else {
         document.getElementById("send").style.cssText = "display:block; background-color: red;"
         document.getElementById("send").innerHTML = "Please fill all fields";
+         setTimeout(function(){
+                        window.location.reload()   
+                     } ,3000)
     }
 }
